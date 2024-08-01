@@ -1,0 +1,45 @@
+Red - master-detail relationship
+Blue - Lookup relationship
+Junction - established many-to-many relationships
+
+What is a capability of roll up summary fields?
+A. Summarize date or numerical data from related detail records.
+C. Can be filtered to only include certain related records.
+
+What do record types determine?
+B. Which page layout to use when displaying record detail and edit pages.
+C. Which values are available for picklist fields on the record detail and edit pages.
+
+Data Types: Primitives
+Blob - Binary Large Object
+Boolean - true or false
+Date - Calendar date
+Datetime - Date and time
+Decimal - Number with fixed decimal point
+Double - Number with floating decimal point
+ID - Record ID (string)
+Integer - Whole number
+Long - Large whole number
+String - Text
+Time - Time of day
+
+Data Types: Collections
+List - Ordered collection of elements which allows duplicates
+Set - Unordered collection of unique elements where duplicate values not allowed
+Map - Collection of key-value pairs where each unique key maps to a single value (possible duplicate values)
+
+An sObject is a virtual superclass, which can be used to refer to any object that can be stored on the Salesforce platform. It is the base class for all standard and custom objects in Salesforce.
+
+The === operator, when used with sObjects, checks that the variables are referring to the same sObject.
+
+SOQL SELECT Syntax:
+SELECT field1, field2, field3 FROM sObject [WHERE condition]
+[LIMIT numberOfRows]
+[Other options, such as GROUP BY, ORDER BY, etc.]
+
+List<Account> accounts = [SELECT Name, Industry FROM Account WHERE Industry = 'Technology'];
+
+5.1
+8.1
+
+
